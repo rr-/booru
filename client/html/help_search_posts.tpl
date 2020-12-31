@@ -147,6 +147,22 @@
             <td>alias of <code>creation-date</code></td>
         </tr>
         <tr>
+            <td><code>file-last-modified-time</code></td>
+            <td>source file last modified at a given date</td>
+        </tr>
+        <tr>
+            <td><code>file-modified</code></td>
+            <td>alias of <code>file-last-modified-time</code></td>
+        </tr>
+        <tr>
+            <td><code>source-modified</code></td>
+            <td>alias of <code>file-last-modified-time</code></td>
+        </tr>
+        <tr>
+            <td><code>flmt</code></td>
+            <td>alias of <code>file-last-modified-time</code></td>
+        </tr>
+        <tr>
             <td><code>last-edit-date</code></td>
             <td>edited at given date</td>
         </tr>
@@ -280,6 +296,22 @@
         <tr>
             <td><code>time</code></td>
             <td>alias of <code>creation-date</code></td>
+        </tr>
+        <tr>
+            <td><code>file-last-modified-time</code></td>
+            <td>newest to oldest based on <i>source file's</i> last modified time</td>
+        </tr>
+        <tr>
+            <td><code>file-modified</code></td>
+            <td>alias of <code>file-last-modified-time</code></td>
+        </tr>
+        <tr>
+            <td><code>source-modified</code></td>
+            <td>alias of <code>file-last-modified-time</code></td>
+        </tr>
+        <tr>
+            <td><code>flmt</code></td>
+            <td>alias of <code>file-last-modified-time</code></td>
         </tr>
         <tr>
             <td><code>last-edit-date</code></td>

@@ -142,6 +142,10 @@ class Post extends events.EventTarget {
         return this._hasCustomThumbnail;
     }
 
+    set fileLastModifiedTime(value) {
+        this._fileLastModifiedTime = value;
+    }
+
     set flags(value) {
         this._flags = value;
     }
@@ -268,6 +272,9 @@ class Post extends events.EventTarget {
         }
         if (this._source !== this._orig._source) {
             detail.source = this._source;
+        }
+        if (this._fileLastModifiedTime !== this._orig._fileLastModifiedTime) {
+            detail.fileLastModifiedTime = this._fileLastModifiedTime;
         }
 
         let apiPromise = this._id
@@ -460,6 +467,7 @@ class Post extends events.EventTarget {
             _type: response.type,
             _mimeType: response.mimeType,
             _creationTime: response.creationTime,
+            _fileLastModifiedTime: response.fileLastModifiedTime,
             _user: response.user,
             _safety: response.safety,
             _contentUrl: response.contentUrl,
